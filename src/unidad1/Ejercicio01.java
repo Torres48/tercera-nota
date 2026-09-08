@@ -7,7 +7,6 @@ public class Ejercicio01 {
         String courseName = "introduction to java";
         boolean isCourseActive = true;
         
-// Imprimir los valores de las variables
 
         System.out.println("Course Name: " + courseName);
         System.out.println("Students Count: " + studentsCount);
