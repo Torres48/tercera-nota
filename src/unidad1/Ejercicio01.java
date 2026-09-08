@@ -1,10 +1,17 @@
 package unidad1;
 
-/**
- * Ejercicio01
- */
 public class Ejercicio01 {
     public static void main(String[] args) {
-        System.out.println("primer ejercicio unidad 1");
+        int studentsCount = 25;
+        double averageGrade = 87.5;
+        String courseName = "introduction to java";
+        boolean isCourseActive = true;
+        
+// Imprimir los valores de las variables
+
+        System.out.println("Course Name: " + courseName);
+        System.out.println("Students Count: " + studentsCount);
+        System.out.println("Average Grade: " + averageGrade);
+        System.out.println("Is Course Active: " + isCourseActive);
     }
 }
