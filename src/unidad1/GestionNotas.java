@@ -25,24 +25,22 @@ public class GestionNotas {
         double[][] notas = new double[cantEstudiantes][cantNotas];
         double[] promedios = new double[cantEstudiantes];
 
-        // Lectura de datos
         for (int i = 0; i < cantEstudiantes; i++) {
 
             System.out.println("\nEstudiante " + (i + 1) + ":");
             System.out.print("Nombre: ");
             nombres[i] = entrada.nextLine();
 
-            System.out.print("Identificacion: ");
+            System.out.print("Identificacion: ");  
+            
             ids[i] = entrada.nextLine();
 
             double suma = 0;
 
-            // Pedir las notas del estudiante
             for (int j = 0; j < cantNotas; j++) {
                 System.out.print("Ingrese nota " + (j + 1) + ": ");
                 notas[i][j] = entrada.nextDouble();
 
-                // Validacion sencilla
                 if (notas[i][j] < 0 || notas[i][j] > 5) {
                     System.out.println("Nota fuera de rango (0 a 5)");
                 }
@@ -54,8 +52,6 @@ public class GestionNotas {
 
             entrada.nextLine();
         }
-
-        // Contadores
         int aprobados = 0;
         int reprobados = 0;
 
@@ -63,7 +59,6 @@ public class GestionNotas {
         System.out.println("         REPORTE FINAL           ");
         System.out.println("=================================");
 
-        // Mostrar reporte
         for (int i = 0; i < cantEstudiantes; i++) {
             
             String estado = "";
