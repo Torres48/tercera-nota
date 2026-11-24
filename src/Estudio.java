@@ -39,6 +39,6 @@ public class Estudio { // Publicamos la clase con el mismo nombre del archivo
             }
         }
 
-        sc.close(); // Cerramos el lector del teclado al terminar
+        sc.close();
     }
 }
